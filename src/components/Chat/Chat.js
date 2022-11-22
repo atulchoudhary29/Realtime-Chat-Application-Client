@@ -26,7 +26,7 @@ const Chat = ({ location }) => {
     // Fetch data from url query string and console.log it
 
     console.log(queryString.parse(window.location.search));
-    socket = io(ENDPOINT, { transports: ['websocket', 'polling', 'flashsocket'] });
+    socket = io(ENDPOINT, {transports: ["websocket"]});
 
     setRoom(room);
     setName(name)
